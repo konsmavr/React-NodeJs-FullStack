@@ -6,8 +6,10 @@ export const errorHandler = (
   err: unknown,
   _req: Request,
   res: Response,
-  _next: NextFunction
+  next: NextFunction
 ) => {
+  void next;
+
   if (err instanceof ZodError) {
     return res.status(400).json({
       message: 'Validation failed',
