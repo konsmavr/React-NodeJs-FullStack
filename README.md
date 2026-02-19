@@ -1,6 +1,6 @@
-# Fullstack Career Starter
+# Fullstack React-NodeJs
 
-Production-style fullstack monorepo built to demonstrate skills expected in fullstack interviews.
+Production-style fullstack monorepo.
 
 ## What this project demonstrates
 
@@ -41,7 +41,7 @@ shared/types
 
 See `/docs/interview/architecture.md` for a talk-track version.
 
-## Core feature (portfolio)
+## Core feature 
 
 Project Task Workflow:
 
@@ -58,7 +58,6 @@ Project Task Workflow:
 - `/shared/types` shared types
 - `/.github/workflows/ci.yml` CI workflow
 - `/docker-compose.yml` API + PostgreSQL stack
-- `/docs/interview` interview prep materials
 
 ## Run locally
 
@@ -144,13 +143,6 @@ Header:
 - Admin: `admin@example.com` / `Password123!`
 - Member: `member@example.com` / `Password123!`
 
-## Interview prep docs
-
-- `/docs/interview/architecture.md`
-- `/docs/interview/pitch-2min.md`
-- `/docs/interview/pitch-10min.md`
-- `/docs/interview/deep-dive-qa.md`
-
 ## CI
 
 GitHub Actions workflow (`/.github/workflows/ci.yml`) runs on push/PR:
@@ -161,10 +153,3 @@ GitHub Actions workflow (`/.github/workflows/ci.yml`) runs on push/PR:
 - typecheck
 - test
 - build
-
-## Next upgrades
-
-- Refresh tokens with httpOnly cookies
-- Team/project collaboration roles
-- Audit logs and activity feed
-- Deployment (web + api + managed PostgreSQL)
