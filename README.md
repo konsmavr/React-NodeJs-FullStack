@@ -2,6 +2,14 @@
 
 Production-style fullstack monorepo.
 
+## Live Demo
+
+- Frontend: `https://YOUR-WEB-URL.onrender.com`
+- Backend health: `https://YOUR-API-URL.onrender.com/health`
+- API base: `https://YOUR-API-URL.onrender.com/api`
+
+Replace the placeholders above after deployment so recruiters can test immediately.
+
 ## What this project demonstrates
 
 - Monorepo architecture with shared typed contracts
@@ -41,7 +49,7 @@ shared/types
 
 See `/docs/interview/architecture.md` for a talk-track version.
 
-## Core feature 
+## Core feature
 
 Project Task Workflow:
 
@@ -57,7 +65,19 @@ Project Task Workflow:
 - `/apps/api` backend
 - `/shared/types` shared types
 - `/.github/workflows/ci.yml` CI workflow
-- `/docker-compose.yml` API + PostgreSQL stack
+- `/docker-compose.yml` local API + PostgreSQL stack
+- `/render.yaml` Render blueprint for live deployment
+
+## Free hosting (recommended)
+
+Use this path for a fast public demo:
+
+- Render for frontend + backend
+- Neon for PostgreSQL
+
+Step-by-step:
+
+- See `/docs/deploy-free.md`
 
 ## Run locally
 
@@ -102,15 +122,6 @@ npm run dev:web
 
 - Frontend: <http://localhost:5173>
 - Backend health: <http://localhost:4000/health>
-
-## Optional Docker run
-
-If Docker is installed:
-
-```bash
-npm run docker:up
-npm run docker:down
-```
 
 ## API overview
 
